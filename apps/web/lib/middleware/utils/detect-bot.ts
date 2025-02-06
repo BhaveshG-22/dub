@@ -14,8 +14,8 @@ export const detectBot = (req: Request) => {
      * - Go-http-client/1.1 is a bot: https://user-agents.net/string/go-http-client-1-1
      * - iframely is for https://iframely.com/docs/about (used by Notion, Linear)
      */
-    return /bot|metatags|chatgpt|bluesky|facebookexternalhit|WhatsApp|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex|MetaInspector|Go-http-client|iframely/i.test(
-      ua,
+    return /bot|metatags|chatgpt|bluesky|facebookexternalhit|WhatsApp|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex|MetaInspector|Go-http-client|iframely|LinkedInBot|Twitterbot|Discordbot|redditbot|TelegramBot|Applebot|Pinterestbot|Mastodon/i.test(
+      ua
     );
   }
   return false;
